@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass_files/ -o dict/css/ --recursive"
+  },
+  "author": "Kelvin Gandhi",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
