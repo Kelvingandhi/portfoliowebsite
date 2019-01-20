@@ -1,5 +1,7 @@
 $primary-color:#444;
-$secondary-color:rgba(235, 231, 15, 0.836);
+//$primary-color:#fff;
+//$secondary-color:#eece1a;
+$secondary-color: #1a87ee;
 $hover-color:#2ecce4;
 
 $show-home-bg-img:true;
@@ -31,6 +33,15 @@ $bg-opacity:0.8;
         }
     }
 
+}
+
+//Set Text color Automatic based on Background Color
+@function setTextColor($color) {
+    @if (lightness($color) > 42) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
 }
 
 //mixin media query

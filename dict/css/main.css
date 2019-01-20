@@ -55,16 +55,16 @@
     .menu-bg-img .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/profile.jpg);
+      background: url(../img/profile_new.jpg);
       border-radius: 50%;
-      border: solid 3px rgba(235, 231, 15, 0.836); }
+      border: solid 3px #1a87ee; }
   .menu .nav-page {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-page.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-page.current > a {
-      color: rgba(235, 231, 15, 0.836); }
+      color: #1a87ee; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     color: #fff;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: rgba(235, 231, 15, 0.836); }
+      color: #1a87ee; }
 
 .nav-page:nth-child(1) {
   transition-delay: 0.1s; }
@@ -113,7 +113,7 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-bg-img .portrait {
-      background: url("../img/profile.jpg");
+      background: url("../img/profile_small.jpg");
       width: 150px;
       height: 150px; } }
 
@@ -165,6 +165,9 @@ header {
   z-index: 2;
   width: 100%; }
 
+.second-color {
+  color: #1a87ee; }
+
 main {
   padding: 4rem; }
   main .social-links {
@@ -174,6 +177,8 @@ main {
       main .social-links a:hover {
         color: #2ecce4;
         transition: all 0.5s ease-out; }
+      main .social-links a span {
+        color: #fff; }
   main#home {
     overflow: hidden; }
     main#home h1 {

@@ -12,7 +12,7 @@ body{
     @include background();
 
     background-color : $primary-color;
-    color: #fff;
+    color: setTextColor($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,6 +49,10 @@ header{
     width: 100%;
 }
 
+.second-color{
+    color: $secondary-color;
+}
+
 //css for main
 main {
     padding: 4rem;
@@ -56,12 +60,18 @@ main {
     .social-links {
         margin-top: 1rem;
 
+        
+
         a {
             padding: 0.4rem;
             
             &:hover { //same as a:hover
                 color: $hover-color;
                 @include easeOut();
+            }
+
+            span {
+                color: setTextColor($primary-color);
             }
 
         }
