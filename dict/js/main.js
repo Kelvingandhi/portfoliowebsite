@@ -2,10 +2,10 @@
 
 const menuBtn = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-bg-img');
+const menuBranding = document.querySelector('.menu-bg-img'); //First column part of image
+const menuNav = document.querySelector('.menu-nav'); //Second column part of Links of pages
 
-const navPages = document.querySelectorAll('.nav-page');
+const navPages = document.querySelectorAll('.nav-page'); //Each of the pages link in menu-nav part
 
 //Set Default(initial) state of menu
 let showMenu = false;
