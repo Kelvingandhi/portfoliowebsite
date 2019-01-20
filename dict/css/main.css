@@ -90,6 +90,39 @@
 .nav-page:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .name-heading {
+      margin-bottom: 1rem;
+      line-height: 1.1; }
+  div.menu-bg-img,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    div.menu-bg-img .show,
+    ul.menu-nav .show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-bg-img {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-bg-img .portrait {
+      background: url("../img/profile.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  main#home {
+    margin-bottom: 5vh; } }
+
 * {
   box-sizing: border-box; }
 
