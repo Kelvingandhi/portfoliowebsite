@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -56,22 +55,27 @@ header{
 //css for main
 main {
     padding: 4rem;
+    //height: 100%;
+    min-height: calc(100vh - 60px);
 
     .social-links {
         margin-top: 1rem;
 
-        
-
         a {
             padding: 0.4rem;
             
-            &:hover { //same as a:hover
-                color: $hover-color;
-                @include easeOut();
-            }
+            // &:hover { //same as a:hover
+            //     color: $hover-color;
+            //     @include easeOut();
+            // }
 
             span {
                 color: setTextColor($primary-color);
+
+                &:hover { //same as a:hover
+                    color: $hover-color;
+                    @include easeOut();
+                }
             }
 
         }
@@ -88,3 +92,37 @@ main {
     }
 
 }
+
+.about-details {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'profile_image bio bio';
+    grid-template-columns: repeat(3, 1fr); //1fr 1fr 1fr; 1fr => 1 fraction
+
+    .about-img {
+        height: 250px;
+        width: 250px;
+        grid-area: profile_image;
+        margin: auto;
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+    }
+    
+    .bio-desc {
+        grid-area: bio;
+        font-size: 1.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+}
+
+#footer-style {
+    text-align: center;
+    padding: 1rem;
+    background: darken($color: $primary-color, $amount: 10);
+    color: setTextColor($primary-color);
+    height: 60px;
+}
+
+@import 'mobile';
