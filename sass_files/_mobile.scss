@@ -2,12 +2,16 @@
 
 //Widescreens
 @include mediaXl {
-
+    .projects-details {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 //Desktops & Laptops
 @include mediaLg {
-    
+    .projects-details {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 //Tablets & Notebooks
@@ -55,8 +59,15 @@
     .about-details {
         grid-template-areas: 
         'profile_image'
-        'bio';
+        'bio'
+        'job1'
+        'job2'
+        'job3';
         grid-template-columns: 1fr;
+    }
+
+    .projects-details {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -67,5 +78,9 @@
     }
     main#home {
         margin-bottom: 5vh;
+    }
+
+    .projects-details {
+        grid-template-columns: 1fr;
     }
 }

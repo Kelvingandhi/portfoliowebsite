@@ -96,12 +96,14 @@ main {
 .about-details {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'profile_image bio bio';
+    grid-template-areas: 
+    'profile_image bio bio'
+    'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr); //1fr 1fr 1fr; 1fr => 1 fraction
 
     .about-img {
-        height: 250px;
-        width: 250px;
+        height: 150px;
+        width: 150px;
         grid-area: profile_image;
         margin: auto;
         border-radius: 50%;
@@ -110,11 +112,56 @@ main {
     
     .bio-desc {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: justify;
         text-justify: inter-word;
     }
 
+}
+
+//Projects
+.projects-details {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: solid 3px #fff;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+//Buttons
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+        background: $secondary-color;
+        color: setTextColor($secondary-color);
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    
+    background: lighten($color: $primary-color, $amount: 50);
+    color: #333;
+}
+
+.btn-dark {
+    @extend .btn;
+    
+    background: darken($color: $primary-color, $amount: 50);
+    color: #fff;
 }
 
 #footer-style {
