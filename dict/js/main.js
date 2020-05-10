@@ -7,6 +7,7 @@ const menuNav = document.querySelector('.menu-nav'); //Second column part of Lin
 
 const navPages = document.querySelectorAll('.nav-page'); //Each of the pages link in menu-nav part
 
+
 //Set Default(initial) state of menu
 let showMenu = false;
 
