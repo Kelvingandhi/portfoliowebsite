@@ -34,6 +34,11 @@ h1,h2,h3{
         background: rgba(lighten($color:$primary-color, $amount: 2), 0.5);
     }
 
+    &.put-margin{
+        margin-top: 2rem;
+        padding: 1 rem;
+    }
+
 }
 
 //Links
@@ -119,8 +124,45 @@ main {
 
 }
 
+//Experience
+.experience-details {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: solid 3px #fff;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+
 //Projects
 .projects-details {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: solid 3px #fff;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+//Certificate
+.certificate-details {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);

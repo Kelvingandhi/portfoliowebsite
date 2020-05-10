@@ -90,6 +90,12 @@
 .nav-page:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-page:nth-child(5) {
+  transition-delay: 0.5s; }
+
+.nav-page:nth-child(6) {
+  transition-delay: 0.6s; }
+
 * {
   box-sizing: border-box; }
 
@@ -122,6 +128,9 @@ h1, h2, h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1 rem;
     background: rgba(73, 73, 73, 0.5); }
+  h1.put-margin, h2.put-margin{
+    margin-top: 2rem;
+    padding: 1 rem;} 
 
 a {
   color: #fff;
@@ -155,7 +164,8 @@ main {
 .about-details {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'profile_image bio bio' 'job1 job2 job3';
+  grid-template-areas: 'profile_image bio bio'
+ 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-details .about-img {
     height: 150px;
@@ -170,6 +180,18 @@ main {
     text-align: justify;
     text-justify: inter-word; }
 
+.experience-details {
+    grid-gap: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .experience-details img {
+      width: 100%;
+      border: solid 3px #fff; }
+      .experience-details img:hover {
+        opacity: 0.5;
+        border-color: #eece1a;
+        transition: all 0.5s ease-out; }
+    
 .projects-details {
   display: grid;
   grid-gap: 0.7rem;
@@ -178,6 +200,18 @@ main {
     width: 100%;
     border: solid 3px #fff; }
     .projects-details img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+.certificate-details {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .certificate-details img {
+    width: 100%;
+    border: solid 3px #fff; }
+    .certificate-details img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
@@ -261,7 +295,11 @@ main {
       width: 150px;
       height: 150px; }
   .about-details {
-    grid-template-areas: 'profile_image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'profile_image'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .projects-details {
     grid-template-columns: repeat(2, 1fr); } }
