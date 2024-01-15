@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "My Personal Portfolio Website",
   "main": "index.js",
+  "homepage": "https://kelvingandhi.github.io/portfoliowebsite",
   "scripts": {
-    "sass": "node-sass -w sass_files/ -o dict/css/ --recursive"
+    "sass": "node-sass -w sass_files/ -o dict/css/ --recursive",
+    "deploy": "gh-pages -d dict"
   },
   "author": "Kelvin Gandhi",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0"
   }
 }
