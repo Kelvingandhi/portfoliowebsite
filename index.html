@@ -70,14 +70,10 @@
             Kelvin <span class="second-color">Gandhi</span>
         </h1>
         <h2>
-            Software Developer, Data Enthusiast
+            <span class="auto-type"></span>
         </h2>
 
         <div class="social-links">
-            <a href="#!">        
-                <span><i class="fab fa-x-twitter fa-2x"></i></span>
-            </a>
-
             <a href="#!">
                 <span><i class="fab fa-linkedin fa-2x"></i></span>
             </a>
@@ -85,11 +81,26 @@
             <a href="#!">
                 <span><i class="fab fa-github fa-2x"></i></span>
             </a>
+
+            <a href="#!">        
+                <span><i class="fab fa-x-twitter fa-2x"></i></span>
+            </a>
+
         </div>
 
     </main>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Software Developer", "Data Enthusiast", "Problem Solver", "Software Developer"],
+            typeSpeed: 50,
+            backDelay: 850,
+            backSpeed: 30,
+            loop: false
+        })
+    </script>
 
 </body>
 </html>
