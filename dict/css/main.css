@@ -158,25 +158,42 @@ main {
 .about-details {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'profile_image bio bio' 'job1 job2 job3';
+  grid-template-areas: 'profile_image bio bio';
   grid-template-columns: repeat(3, 1fr); }
   .about-details .about-img {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     grid-area: profile_image;
     margin: auto;
     border-radius: 50%;
     border: solid 3px #eece1a; }
   .about-details .bio-desc {
     grid-area: bio;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
     text-justify: inter-word; }
 
 .experience-details {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-row-gap: 50px;
+  grid-column-gap: 150px;
+  grid-template-areas: 'job1 job2' 'job3 job4';
+  grid-template-columns: repeat(2, 1fr); }
+  .experience-details .job-1 {
+    grid-area: job1; }
+  .experience-details .job-2 {
+    grid-area: job2; }
+  .experience-details .job-3 {
+    grid-area: job3; }
+  .experience-details .job-4 {
+    grid-area: job4; }
+  .experience-details .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+    .experience-details .job:hover {
+      opacity: 0.75;
+      transition: all 0.5s ease-out; }
   .experience-details img {
     width: 100%;
     border: solid 3px #fff; }
@@ -288,7 +305,10 @@ main {
       width: 150px;
       height: 150px; }
   .about-details {
-    grid-template-areas: 'profile_image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'profile_image' 'bio';
+    grid-template-columns: 1fr; }
+  .experience-details {
+    grid-template-areas: 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .projects-details {
     grid-template-columns: repeat(2, 1fr); } }

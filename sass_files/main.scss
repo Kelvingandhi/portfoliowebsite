@@ -102,13 +102,12 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'profile_image bio bio'
-    'job1 job2 job3';
+    'profile_image bio bio';
     grid-template-columns: repeat(3, 1fr); //1fr 1fr 1fr; 1fr => 1 fraction
 
     .about-img {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         grid-area: profile_image;
         margin: auto;
         border-radius: 50%;
@@ -117,7 +116,7 @@ main {
     
     .bio-desc {
         grid-area: bio;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: justify;
         text-justify: inter-word;
     }
@@ -127,8 +126,39 @@ main {
 //Experience
 .experience-details {
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 150px;
+    grid-template-areas:
+    'job1 job2'
+    'job3 job4';
+    grid-template-columns: repeat(2, 1fr); //1fr 1fr 1fr; 1fr => 1 fraction
+
+    .job-1 {
+        grid-area: job1;
+    }
+
+    .job-2 {
+        grid-area: job2;
+    }
+
+    .job-3 {
+        grid-area: job3;
+    }
+
+    .job-4 {
+        grid-area: job4;
+    }
+    
+    .job {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+
+        &:hover {
+            opacity: 0.75;
+            @include easeOut
+        }
+    }
 
     img {
         width: 100%;
