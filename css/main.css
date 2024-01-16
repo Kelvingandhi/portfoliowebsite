@@ -175,7 +175,7 @@ main {
 
 .experience-details {
   display: grid;
-  grid-gap: 10px 150px;
+  grid-gap: 50px 150px;
   grid-template-areas: 'job1 job2' 'job3 job4';
   grid-template-columns: repeat(2, 1fr); }
   .experience-details .job-1 {
