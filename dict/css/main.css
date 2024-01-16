@@ -55,7 +55,7 @@
     .menu-bg-img .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/profile_new.jpg);
+      background: url(../img/recent_pic.png);
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-page {
@@ -175,8 +175,7 @@ main {
 
 .experience-details {
   display: grid;
-  grid-row-gap: 50px;
-  grid-column-gap: 150px;
+  grid-gap: 50px 150px;
   grid-template-areas: 'job1 job2' 'job3 job4';
   grid-template-columns: repeat(2, 1fr); }
   .experience-details .job-1 {
